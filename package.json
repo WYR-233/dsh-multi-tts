@@ -1,7 +1,7 @@
 {
   "name": "dsh-multi-tts",
-  "version": "0.1.1",
-  "description": "多服务商语音朗读(MiniMax / OpenAI 兼容 TTS)——每条回复旁的朗读按钮、输入框自动朗读开关、设置页自选服务商与音色。零构建,纯 JS。",
+  "version": "0.1.2",
+  "description": "语音朗读(MiniMax / OpenAI 兼容 TTS,服务商与音色自选)——每条回复旁的朗读按钮、输入框自动朗读开关、设置页自选服务商与音色。零构建,纯 JS。",
   "keywords": [
     "deepseek-harness",
     "dsh",
