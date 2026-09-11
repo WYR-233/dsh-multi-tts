@@ -42,7 +42,7 @@ Then add the package to the profile's bundle list (`dsh plugin add` only writes 
 }
 ```
 
-Restart DSH, then open **Settings → 鲸鱼娘语音 / Multi TTS**.
+Restart DSH, then open **Settings → Multi TTS / 多服务商语音朗读**.
 
 ## Configure
 
@@ -124,7 +124,7 @@ dsh plugin --profile web add dsh-multi-tts
 }
 ```
 
-重启 DSH,打开**设置 → 鲸鱼娘语音**。
+重启 DSH,打开**设置 → 多服务商语音朗读**。
 
 ### 配置
 
