@@ -1,0 +1,8 @@
+# dsh-multi-tts bundle patch: insert the host row into the composition.
+# The row id must be unique; `name` must equal the package name so the
+# client-modules roster can resolve it. API key / provider / voice are
+# configured in the plugin settings page (stored under $DSH_HOME/multi-tts/),
+# or supplied through the environment / $DSH_HOME/.env.
+- insert:
+    - id: multi-tts
+      name: dsh-multi-tts

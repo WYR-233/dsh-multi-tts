@@ -1,0 +1,55 @@
+{
+  "name": "dsh-multi-tts",
+  "version": "0.1.0",
+  "description": "鲸鱼娘语音朗读(多服务商:MiniMax / OpenAI 兼容 TTS)——每条回复旁的朗读按钮、输入框自动朗读开关、设置页自选服务商与音色。零构建,纯 JS。",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "tts",
+    "text-to-speech",
+    "minimax",
+    "read-aloud"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "license": "MIT"
+}
