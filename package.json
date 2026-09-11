@@ -1,15 +1,20 @@
 {
   "name": "dsh-multi-tts",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "语音朗读(MiniMax / OpenAI 兼容 TTS,服务商与音色自选)——每条回复旁的朗读按钮、输入框自动朗读开关、设置页自选服务商与音色。零构建,纯 JS。",
   "keywords": [
     "deepseek-harness",
     "dsh",
+    "dsh-plugin",
     "plugin",
     "tts",
     "text-to-speech",
+    "speech-synthesis",
+    "read-aloud",
     "minimax",
-    "read-aloud"
+    "openai-compatible",
+    "voice",
+    "语音朗读"
   ],
   "type": "module",
   "main": "lib/index.js",
@@ -30,6 +35,18 @@
     "lib",
     "cordis.patch.yml",
     "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WYR-233/dsh-multi-tts.git"
+  },
+  "homepage": "https://github.com/WYR-233/dsh-multi-tts#readme",
+  "bugs": {
+    "url": "https://github.com/WYR-233/dsh-multi-tts/issues"
+  },
+  "screenshots": [
+    "assets/settings.png",
+    "assets/read-button.png"
   ],
   "dsh": {
     "bundle": {
